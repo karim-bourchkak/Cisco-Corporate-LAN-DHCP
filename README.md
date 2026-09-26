@@ -21,6 +21,7 @@ Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip address 192.168.1.1 255.255.255.0
 Router(config-if)# no shutdown
 Router(config-if)# exit
+```
 ### 2. DHCP Pool Deployment
 ```text
 Router(config)# ip dhcp pool LAN-POOL
@@ -29,12 +30,10 @@ Router(dhcp-config)# default-router 192.168.1.1
 Router(dhcp-config)# exit
 Router(config)# do write memory
 ```
----
-
 ## Proof of Work & Verification
 - **DHCP Leasing:** Client PCs automatically requested and obtained valid network configurations within the `192.168.1.0/24` scope.
 - **ICMP Reachability:** Successful `ping` tests confirmed full layer 3 connectivity between end devices and the default gateway (`192.168.1.1`).
 
 ### Network Topology & Verification Screenshots
-![Network Topology](Screenshot%202026-09-25%20143504.png)
-![Ping Test Verification](Screenshot%202026-09-25%20143530.png)
+![Ping Test PC1](ping-test-pc1.png)
+![Ping Test Verification](ping-test-pc2.png)
