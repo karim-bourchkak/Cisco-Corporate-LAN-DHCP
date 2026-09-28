@@ -35,5 +35,7 @@ Router(config)# do write memory
 - **ICMP Reachability:** Successful `ping` tests confirmed full layer 3 connectivity between end devices and the default gateway (`192.168.1.1`).
 
 ### Network Topology & Verification Screenshots
+![Network Topology](network-topology.png)
+![Switch Configuration](switch-boot-status.png)
 ![Ping Test PC1](ping-test-pc1.png)
 ![Ping Test Verification](ping-test-pc2.png)
